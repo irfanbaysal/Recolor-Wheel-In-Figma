@@ -1,0 +1,38 @@
+{
+  "name": "@irfanbaysal/recolor-wheel-in-figma",
+  "version": "0.1.0",
+  "description": "Figma plugin that recolors a whole selection on one hue wheel: fills, strokes, gradient stops, shadows and masks, live as you drag.",
+  "license": "MIT",
+  "author": "İrfan Yiğit BAYSAL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfanbaysal/Recolor-Wheel-In-Figma.git"
+  },
+  "homepage": "https://github.com/irfanbaysal/Recolor-Wheel-In-Figma#readme",
+  "bugs": {
+    "url": "https://github.com/irfanbaysal/Recolor-Wheel-In-Figma/issues"
+  },
+  "keywords": ["figma", "figma-plugin", "color", "recolor", "color-wheel", "hsv"],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "manifest.json",
+    "dist/main.js",
+    "dist/ui.html"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepack": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.100.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

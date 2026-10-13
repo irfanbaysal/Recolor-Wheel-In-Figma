@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Recolor</title>
+<!-- INLINE_CSS -->
+</head>
+<body>
+<main id="app">
+  <h1>Recolor</h1>
+  <p id="status">&nbsp;</p>
+  <p id="note" hidden></p>
+  <section id="stage">
+    <p id="empty" hidden></p>
+    <div id="wheel" hidden>
+      <canvas id="canvas"></canvas>
+      <svg id="lines" width="280" height="280" viewBox="0 0 280 280" aria-hidden="true"></svg>
+      <div id="dots"></div>
+      <div id="tip" hidden><span class="nm"></span><span class="sw"></span><span class="hx"></span><span class="kd"></span></div>
+      <div id="pop" hidden></div>
+    </div>
+  </section>
+  <div id="axis" hidden>
+    <div class="seg small" role="group" aria-label="Wheel"><button type="button" id="axis-sat" class="on" aria-pressed="true">Saturation / Hue</button><button type="button" id="axis-val" aria-pressed="false">Brightness / Hue</button></div>
+    <label class="slider"><span id="slider-label">Brightness</span><input type="range" id="slider" min="0" max="100" step="1" value="100"></label>
+  </div>
+  <div class="seg" role="group" aria-label="Mode">
+    <button type="button" id="mode-linked" class="on" aria-pressed="true">Linked</button>
+    <button type="button" id="mode-single" aria-pressed="false">Individual</button>
+  </div>
+  <footer>
+    <button type="button" id="reset">Reset</button>
+    <span class="grow"></span>
+    <button type="button" id="cancel">Cancel</button>
+    <button type="button" id="apply" class="primary">Apply</button>
+  </footer>
+</main>
+<!-- INLINE_JS -->
+</body>
+</html>
