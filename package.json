@@ -1,6 +1,6 @@
 {
   "name": "@irfanbaysal/recolor-wheel-in-figma",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Figma plugin that recolors a whole selection on one hue wheel: fills, strokes, gradient stops, shadows and masks, live as you drag.",
   "license": "MIT",
   "author": "İrfan Yiğit BAYSAL",
