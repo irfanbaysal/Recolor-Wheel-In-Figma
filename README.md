@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Recolor Wheel for Figma</h1>
+<h1>Recolor Wheel In Figma</h1>
 
 <hr>
 
@@ -89,7 +89,7 @@ npm install
 npm run build
 ```
 
-Then in Figma: **Plugins → Development → Import plugin from manifest…** and pick `manifest.json` from this folder. Select a few vector layers, run *Recolor Wheel*, drag some dots.
+Then in Figma: **Plugins → Development → Import plugin from manifest…** and pick `manifest.json` from this folder. Select a few vector layers, run *Recolor Wheel In Figma*, drag some dots.
 
 `dist/` is gitignored, so you need to build before Figma can load it.
 
@@ -164,7 +164,7 @@ A few things worth knowing if you dig in:
 
 ## Status
 
-v0.1.0. Works in the browser preview and in tests; still being checked inside Figma itself. Open questions: whether an applied session ends up as one Undo step, whether variable-bound paints are detected reliably, what exactly happens on native window close, and how it performs at ~200 nodes.
+v0.1.1. Works in the browser preview and in tests; still being checked inside Figma itself. Open questions: whether an applied session ends up as one Undo step, whether variable-bound paints are detected reliably, what exactly happens on native window close, and how it performs at ~200 nodes.
 
 Bug reports and ideas welcome. It's a small codebase, so PRs are easy to review.
 
